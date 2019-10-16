@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>hello</title>
+    <style>
+        div p{color: #f00;}
+        .py{font-size: 40px}
+        #l1{width: 200px;font-size: 40px}
+    </style>
+</head>
+<body>
+    <h1>hello</h1>
+    <div>World</div>
+    <p class="py">python</p>
+    <label id ='l1'>test</label>
+    <div>
+        <a href="javascript:void(0)" onclick="javascript:show_text('l1','my frist js')">my frist js</a>
+        <a href="javascript:void(0)" onclick="javascript:show_text('l1','hello python')">hello python</a>
+        <a href="javascript:void(0)" onclick="javascript:show_color('l1','#f00')">red</a>
+        <a href="javascript:void(0)" onclick="javascript:show_color('l1','#0f0')">green</a>
+    </div>
+    <script>
+        function show_text(id, text) {
+            document.getElementById((id)).innerHTML=text
+        }
+        function show_color(id, color) {
+            document.getElementById(id).style.color=color
+        }
+    </script>
+
+  <h1>POST</h1>
+    <form action="/blog/123" method="POST">
+        <input type="username" name="username" value="">
+        <input type="password" name="password" value="">
+        <input type="submit" value="submit">
+    </form>
+</body>
+</html>
